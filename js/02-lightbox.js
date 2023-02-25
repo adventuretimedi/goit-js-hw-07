@@ -1,7 +1,5 @@
 import { galleryItems } from "./gallery-items.js";
 
-console.log(galleryItems);
-
 const createGalleryCardsMarkup = (galleryItems) => {
   const { preview, original, description } = galleryItems;
   return `<a class="gallery__item" href="${original}">

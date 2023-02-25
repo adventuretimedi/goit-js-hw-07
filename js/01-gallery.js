@@ -24,7 +24,7 @@ function selectModalImg(e) {
     return;
   }
   const selectedImg = e.target.dataset.source;
-  //create modal
+
   const instance = basicLightbox.create(
     `                  
   <img src=${selectedImg} alt="Gallery Image" />`,
@@ -38,7 +38,6 @@ function selectModalImg(e) {
 
   function exitFromModal(e) {
     if (e.key === "Escape") {
-      console.log(e.key);
       instance.close();
     }
   }
