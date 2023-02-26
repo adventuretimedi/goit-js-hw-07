@@ -37,7 +37,8 @@ function selectModalImg(e) {
   instance.show();
 
   function exitFromModal(e) {
-    if (e.key === "Escape") {
+    if (e.code === "Escape") {
+      console.log(e.code);
       instance.close();
     }
   }
